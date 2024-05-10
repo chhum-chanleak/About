@@ -161,3 +161,50 @@
     }
   }
 }
+
+@media screen and (max-width: 800px){
+  .container-one {
+    flex-direction: column;
+    width: 400px;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    flex-direction: column;
+    width: 100%;
+
+    & .description {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+    }
+
+    & .info {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 0;
+
+      & .title {
+        width: 380px;
+      }
+
+      & ul li {
+        flex: 0 0 100%;
+      }
+
+      & .background-info {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      & .background-info > p {
+        width: 380px;
+      }
+
+    }
+  }
+}
